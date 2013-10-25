@@ -1,0 +1,27 @@
+define(
+  [
+    'backbone'
+  ],
+	function(Backbone) {
+		'use strict';
+
+		var LoginModel = Backbone.Model.extend({
+
+		parse: function(response) {
+			return response.value;
+		},
+		
+		url: function() {
+        	return 'js/app/entities/users.json';
+      	},
+
+		fetch: function(options) {
+			console.log("fetch model");
+			options = options || {};
+			options.dataType = options.dataType || 'json';
+			return Backbone.Model.prototype.fetch.apply(this, [options]);
+		}
+		});
+		return LoginModel;
+	}
+);

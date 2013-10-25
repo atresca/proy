@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>Header</title>
+		<!-- <link rel="stylesheet"  href="css/header.css">  <!--- Header css   -->
+		<!-- <link rel="stylesheet" href="css/breadcrumb.css" />
+		<link rel="stylesheet" href="css/tripName.css">  -->
+		<link rel="stylesheet" href="css/style.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<!--- Character codification   -->
+	</head>
+	<body >
+
+		<!---      Header start   -->
+		<header>
+			<section class="wrapper">
+				<img src="img/gt_logo.png"> </img>
+				<nav>
+					<ul>
+						<li>
+							<a href="#" class="active"> New Trip </a>
+						</li>
+						<li>
+							<a href="#"> Trips in Process </a>
+						</li>
+						<li>
+							<a href="#"> Historial </a>
+						</li>
+						<li>
+							<a href="#"> Favorites </a>
+						</li>
+						<li>
+							<a href="#"> Offers </a>
+						</li>
+					</ul>
+				</nav>
+				<p>
+					Hi, <span>José Perez</span>
+				</p>
+			</section>
+		</header>
+		<!---     Header end     -->
+		<section class="wrapperContainer">
+			<form class="dashboard" action="#">
+
+				<article class="title">
+					<h1> Tell us what kind of trip are you planning? </h1>
+				</article>
+
+				<article class="items">
+					<article>
+						Who is travelling?
+						<input placeholder="Enter Quantity of passengers or Glober's Name" name="who" required/>
+					</article>
+					<article>
+						Where do they have to go?
+						<input placeholder="Enter Client's Name or Office Address" name="where" required />
+					</article>
+					<article>
+						When are you leaving?
+						<input placeholder="Enter Exact Date or Estimated Date" name="when" required />
+					</article>
+					<article>
+						How long they'll be there?
+						<input placeholder="Enter Quantity of Days, Weeks or Months" name="howLong" />
+					</article>
+				</article>
+
+				<footer class="button">
+					<input type="submit" class="planning" value="Start Planning"/>
+					<input type="button" class="details" value="Add more details"/>
+					<span> Other steps are optional <a href="#">click here</a></span>
+				</footer>
+			</form>
+
+			<section class="breadcrumb">
+				<ul class="">
+					<h4>Planning My Trip</h4>
+					<a class="enabled" href="#">
+					<li class="details">
+						<span>My Trip Details</span>
+					</li> </a>
+					<a class="enabled" href="#">
+					<li class="flight">
+						<span>Flights</span>
+					</li> </a>
+					<a class="enabled" href="#">
+					<li class="hotel">
+						<span>Hotel</span>
+					</li> </a>
+					<a class="disabled" href="#">
+					<li class="transfer">
+						<span>Transfers</span>
+					</li> </a>
+					<a class="disabled" href="#">
+					<li class="car">
+						<span>Cars</span>
+					</li> </a>
+					<a class="disabled" href="#">
+					<li class="perdiem">
+						<span>Perdiem</span>
+					</li> </a>
+					<li class="budget-li">
+						<label class="currency"> US$</label>
+						<label class="ammount"> 2508 </label>
+						<label class="budget"> Budget per Passanger</label>
+					</li>
+					<li class="button">
+						<button class="btn">
+							Get Budget & Save Trip
+						</button>
+					</li>
+					<a class="last" href="#">
+					<li>
+						<span>More Options</span>
+					</li></a>
+				</ul>
+			</section>
+
+		</section>
+	</body>
+</html>

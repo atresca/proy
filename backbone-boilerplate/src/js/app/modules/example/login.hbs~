@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Login</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" data-main="js/main" src="js/vendor/requirejs/require.js"> </script>
+
+	</head>
+	<body>	
+		<header class="login">
+			<div class="headerWrapper">
+				<img src="img/gt_logo.png" />
+			</div>
+		</header>
+		
+		<!-- This is the section that contains all of the input login elements  -->
+		
+		<section class="loginWrapper">
+			<form action="home.html">
+				<input id="username" class="inputText" type="email" placeholder="name.lastname@globant.com" required />
+				<input id="password" class="inputText" type="password" placeholder="Password" required />
+				<input id="btnSubmit" class="loginBtn" type="submit" value="Login" />
+			</form>
+		</section>
+		
+		<!-- end of login section -->
+		
+	</body>
+
+</html>

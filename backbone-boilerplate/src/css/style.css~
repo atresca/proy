@@ -1,0 +1,661 @@
+.wrapperContainer {
+	width: 990px;
+	margin: 30px auto;
+}
+
+/* --------------------LOGIN START-------------------------*/
+.login {
+	background: -webkit-linear-gradient(top, #908f8f 75%, #C4C4C4);
+	background: -moz-linear-gradient(top, #908f8f 75%, #C4C4C4);
+	box-shadow: inset 0 -1px 0px #646664;
+	padding: 10px 0px;
+	width: 100%;
+	text-align: center;
+}
+/* Wrapper of the header items */
+.headerWrapper {
+	margin: auto;
+}
+/* Start login section */
+.loginWrapper {
+	border-radius: 6px;
+	border: 2px solid #CCCCCC;
+	width: 800px;
+	overflow: auto;
+	margin: 60px auto 0px auto;
+}
+
+/* Any login element */
+.loginWrapper * {
+	display: block;
+}
+
+/* Textfields inside the login section.*/
+.loginWrapper .inputText {
+	border-radius: 5px;
+	border-color: silver;
+	margin: 35px auto 15px auto;
+	padding: 10px 5px 10px 5px;
+	width: 92%;
+	font-size: 17px;
+}
+
+/* login button */
+.loginWrapper .loginBtn {
+	margin: 21px 15px 18px 0px;
+	padding: 6px 35px;
+	border-color: #CAD7DE;
+	border-radius: 4px;
+	float: right;
+	color: white;
+	font-size: 16px;
+	background: -webkit-linear-gradient(top, #99cae3 40%, #5bb3e1 80%);
+	background: -moz-linear-gradient(top, #99cae3 40%, #5bb3e1 80%);
+}
+
+/* styling placeholders */
+.loginWrapper ::-webkit-input-placeholder {/* Chrome and Safari */
+	font-style: italic;
+	color: #CBCBCB;
+}
+
+.loginWrapper :-moz-placeholder {/* Mozilla 18- */
+	font-style: italic;
+	color: #CBCBCB;
+}
+
+.loginWrapper ::-moz-placeholder {/* Mozilla 19+ */
+	font-style: italic;
+	color: #CBCBCB;
+}
+/* end of styling placeholders */
+
+/* end login section */
+/* --------------------LOGIN END-------------------------*/
+/* --------------------BREADCRUM START-------------------------*/
+body {
+	font-family: sans-serif;
+}
+
+.breadcrumb {
+	width: 240px;
+	border: 2px solid #43A2CE;
+	border-radius: 6px;
+	position: relative;
+	background: white;
+	border: 2px solid #43A2CE;
+	margin-left: 25px;
+	float:left;
+}
+/**
+ * 	Style for the arrow.
+ */
+.breadcrumb:after, .breadcrumb:before {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.breadcrumb:after {
+	border-color: rgba(213, 213, 213, 0);
+	border-right-color: white;
+	border-width: 15px;
+	top: 25px;
+	margin-top: -15px;
+}
+.breadcrumb:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-right-color: #43A2CE;
+	border-width: 18px;
+	top: 25px;
+	margin-top: -18px;
+}
+
+/**
+ * 	End of style for arrow.
+ */
+
+/**
+ * 	General style for the breadcrumb
+ */
+.breadcrumb ul {
+	vertical-align: middle;
+	list-style: none;
+	padding: 0px;
+	margin: 0;
+}
+
+.breadcrumb li {
+	height: 50px;
+	border-top: 1px dotted gray;
+}
+
+.breadcrumb span {
+	color: #5C5D5C;
+	font-size: 12px;
+	font-weight: 700;
+	position: relative;
+	top: 15px;
+	left: 60px;
+}
+.breadcrumb a {
+	text-decoration: none;
+}
+.breadcrumb h4 {
+	padding-left: 40px;
+	margin: 15px auto;
+	color: #43A2CE;
+}
+
+/**
+ * 	Style for the enabled elements.
+ */
+.breadcrumb a.enabled > li.details {
+	background: url(../images/icons/question.png) no-repeat 25px 15px, url(../images/icons/chevron-right.png) no-repeat scroll right 20px center transparent;
+}
+
+.breadcrumb a.enabled > li.car {
+	background: url(../images/icons/carb.png) no-repeat 20px 10px, url(../images/icons/chevron-right.png) no-repeat scroll right 20px center transparent;
+}
+
+.breadcrumb a.enabled > li.flight {
+	background: url(../images/icons/airplaneb.png) no-repeat 20px 10px, url(../images/icons/chevron-right.png) no-repeat scroll right 20px center transparent;
+}
+
+.breadcrumb a.enabled > li.hotel {
+	background: url(../images/icons/homeb.png) no-repeat 20px 10px, url(../images/icons/chevron-right.png) no-repeat scroll right 20px center transparent;
+}
+
+.breadcrumb a.enabled > li.perdiem {
+	background: url(../images/icons/coins.png) no-repeat 20px 10px, url(../images/icons/chevron-right.png) no-repeat scroll right 20px center transparent;
+}
+
+.breadcrumb a.enabled > li.transfer {
+	background: url(../images/icons/bus.png) no-repeat 20px 10px, url(../images/icons/chevron-right.png) no-repeat scroll right 20px center transparent;
+}
+
+/**
+ * 	Hover style for enabled elements.
+ */
+.breadcrumb a.enabled:hover span {
+	color: #43A2CE;
+}
+
+/**
+ * 	Style for the disabled elements.
+ */
+.breadcrumb a.disabled > li.details {
+	cursor: default;
+	background: rgb(233,238,244); /* Old browsers */
+	background: url(../images/icons/questionnb.png) no-repeat 25px 15px, -moz-linear-gradient(top, rgba(233,238,244,1) 0%, rgba(252,254,252,1) 100%);/* FF3.6+ */
+	background: url(../images/icons/questionnb.png) no-repeat 25px 15px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(233,238,244,1)), color-stop(100%,rgba(252,254,252,1)));/* Chrome,Safari4+ */
+	background: url(../images/icons/questionnb.png) no-repeat 25px 15px, -webkit-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);/* Chrome10+,Safari5.1+ */
+	background: url(../images/icons/questionnb.png) no-repeat 25px 15px, -o-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);/* Opera 11.10+ */
+	background: url(../images/icons/questionnb.png) no-repeat 25px 15px, -ms-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);/* IE10+ */
+	background: url(../images/icons/questionnb.png) no-repeat 25px 15px, linear-gradient(to bottom, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9eef4', endColorstr='#fcfefc',GradientType=0 ); /* IE6-9 */
+}
+
+.breadcrumb a.disabled > li.car {
+	cursor: default;
+	background: rgb(233,238,244);
+	background: url(../images/icons/car.png) no-repeat 20px 10px, -moz-linear-gradient(top, rgba(233,238,244,1) 0%, rgba(252,254,252,1) 100%);
+	background: url(../images/icons/car.png) no-repeat 20px 10px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(233,238,244,1)), color-stop(100%,rgba(252,254,252,1)));
+	background: url(../images/icons/car.png) no-repeat 20px 10px, -webkit-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	background: url(../images/icons/car.png) no-repeat 20px 10px, -o-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	background: url(../images/icons/car.png) no-repeat 20px 10px, -ms-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	background: url(../images/icons/car.png) no-repeat 20px 10px, linear-gradient(to bottom, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9eef4', endColorstr='#fcfefc',GradientType=0 );
+}
+.breadcrumb a.disabled > li.flight {
+	cursor: default;
+	background: rgb(233,238,244);
+	background: url(../images/icons/airplane.png) no-repeat 20px 10px, -moz-linear-gradient(top, rgba(233,238,244,1) 0%, rgba(252,254,252,1) 100%);
+	background: url(../images/icons/airplane.png) no-repeat 20px 10px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(233,238,244,1)), color-stop(100%,rgba(252,254,252,1)));
+	background: url(../images/icons/airplane.png) no-repeat 20px 10px, -webkit-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	background: url(../images/icons/airplane.png) no-repeat 20px 10px, -o-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	background: url(../images/icons/airplane.png) no-repeat 20px 10px, -ms-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	background: url(../images/icons/airplane.png) no-repeat 20px 10px, linear-gradient(to bottom, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9eef4', endColorstr='#fcfefc',GradientType=0 );
+}
+.breadcrumb a.disabled > li.hotel {
+	cursor: default;
+	background: rgb(233,238,244);
+	background: url(../images/icons/home.png) no-repeat 20px 10px, -moz-linear-gradient(top, rgba(233,238,244,1) 0%, rgba(252,254,252,1) 100%);
+	background: url(../images/icons/home.png) no-repeat 20px 10px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(233,238,244,1)), color-stop(100%,rgba(252,254,252,1)));
+	background: url(../images/icons/home.png) no-repeat 20px 10px, -webkit-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	background: url(../images/icons/home.png) no-repeat 20px 10px, -o-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	background: url(../images/icons/home.png) no-repeat 20px 10px, -ms-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	background: url(../images/icons/home.png) no-repeat 20px 10px, linear-gradient(to bottom, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9eef4', endColorstr='#fcfefc',GradientType=0 );
+}
+.breadcrumb a.disabled > li.perdiem {
+	cursor: default;
+	background: rgb(233,238,244);
+	background: url(../images/icons/coins.png) no-repeat 20px 10px, -moz-linear-gradient(top, rgba(233,238,244,1) 0%, rgba(252,254,252,1) 100%);
+	background: url(../images/icons/coins.png) no-repeat 20px 10px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(233,238,244,1)), color-stop(100%,rgba(252,254,252,1)));
+	background: url(../images/icons/coins.png) no-repeat 20px 10px, -webkit-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	background: url(../images/icons/coins.png) no-repeat 20px 10px, -o-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	background: url(../images/icons/coins.png) no-repeat 20px 10px, -ms-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	background: url(../images/icons/coins.png) no-repeat 20px 10px, linear-gradient(to bottom, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9eef4', endColorstr='#fcfefc',GradientType=0 );
+}
+.breadcrumb a.disabled > li.transfer {
+	cursor: default;
+	background: rgb(233,238,244);
+	background: url(../images/icons/bus.png) no-repeat 20px 10px, -moz-linear-gradient(top, rgba(233,238,244,1) 0%, rgba(252,254,252,1) 100%);
+	background: url(../images/icons/bus.png) no-repeat 20px 10px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(233,238,244,1)), color-stop(100%,rgba(252,254,252,1)));
+	background: url(../images/icons/bus.png) no-repeat 20px 10px, -webkit-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	background: url(../images/icons/bus.png) no-repeat 20px 10px, -o-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	background: url(../images/icons/bus.png) no-repeat 20px 10px, -ms-linear-gradient(top, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	background: url(../images/icons/bus.png) no-repeat 20px 10px, linear-gradient(to bottom, rgba(233,238,244,1) 0%,rgba(252,254,252,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9eef4', endColorstr='#fcfefc',GradientType=0 );
+}
+
+/**
+ * 	Style for more options.
+ */
+.breadcrumb a.last li {
+	height: 35px;
+	background-color: #43A2CE;
+	background: url(../images/icons/chevron-right.png) no-repeat scroll right 20px center transparent;
+}
+
+.breadcrumb a.last span {
+	top: 5px;
+	left: 15px;
+}
+
+.breadcrumb a.last:hover span {
+	color: #43A2CE;
+}
+
+/**
+ * 	Style for breadcrumb button.
+ */
+.breadcrumb .btn {
+	margin: 9px auto;
+	padding: 6px 25px;
+	border-color: #CAD7DE;
+	border-radius: 4px;
+	color: white;
+	background: -webkit-linear-gradient(top, #99cae3 40%, #5bb3e1 80%);
+	background: -moz-linear-gradient(top, #81BEDD 40%, #3399CC 80%);
+}
+
+.breadcrumb li.button {
+	height: 55px;
+	text-align: center;
+}
+
+/**
+ * 	Style for budget
+ */
+.breadcrumb .budget-li{
+	text-align: center;
+}
+.breadcrumb label.currency {
+	color: #FC9104;
+	font-size: 12px;
+	font-weight: 700;
+	position: relative;
+	top: 11px;
+}
+.breadcrumb label.ammount {
+	color: #FC9104;
+	font-size: 22px;
+	font-weight: 700;
+	position: relative;
+	top: 11px;
+}
+.breadcrumb label.budget {
+	color: #5C5D5C;
+	font-size: 9px;
+	font-weight: 600;
+	position: relative;
+	top: 11px;
+}
+
+
+/* --------------------BREADCRUM END-------------------------*/
+
+/* --------------------HEADER START-------------------------*/
+header {
+	height:101px;
+	width:100%;
+	padding:0px;
+	background-image: -moz-linear-gradient(bottom, #83827c 0%, #65646c 25%); /* Mozilla*/
+	background-image: -ms-linear-gradient(bottom, #83827c 0%, #65646c 25%); /* explorer 10*/
+	background-image: -webkit-linear-gradient(bottom, #83827c 0%, #65646c 25%); /* Chrome - Safari*/
+	box-shadow:inset 0 -1px 0px #646664;
+}
+
+header .wrapper{
+	width:1150px;
+	margin:auto;
+}
+
+header nav {
+	
+}
+
+header img {
+	display:block;
+	float:left;
+	margin: 7px 0 0 120px;	
+}
+
+header nav ul {
+	float:left;
+	position:relative;
+	text-align:center;
+	margin:45px 0px 0px 35px;
+}
+
+header nav ul li {
+	display:inline;
+	padding: 7px 13px 10px 13px;
+	height: 21px;
+	border-right: solid 1px #5c5b54;
+	border-left: solid 1px #847e7c;
+}
+
+
+/*Hover effect*/
+header nav ul li:hover a {
+	color:#c3d62c;
+	border-bottom: #c3d62c 1px dotted;
+}
+
+/*To make correct separators of menu options*/
+header nav ul li:first-child {
+	border-left:none;
+}
+
+header nav ul li:last-child {
+	border-right:none;
+}
+/**/	
+
+	
+/* A different class for active menu option*/
+header nav ul li a.active {
+	border-bottom: solid 4px #c3d62c;
+	font-weight:bold;
+}
+
+header nav ul li a.active:hover {
+	border-bottom: solid 4px #c3d62c;
+	font-weight:bold;
+}
+
+header nav ul li a {
+	color:white;
+	font-family: verdana, arial, helvetica, sans-serif; 
+	font-size: 13px;
+	text-decoration:none;
+	padding:0 3px 4px 3px;
+}
+
+header span {
+	color:#b7d02c;
+	text-decoration:underline;
+}
+
+header p {
+	float:right;
+ 	font-family: verdana, arial, helvetica, sans-serif; 
+ 	font-size:12px;
+ 	color: white;
+ 	margin:48px 100px 0px 0px;
+}
+
+/* --------------------HEADER END-------------------------*/
+/* --------------------TRIP NAME START-------------------------*/
+/*the tripName class is a section that contains the whole Trip Name component
+ */
+/*.tripName {
+  border: 1px solid silver;
+  border-radius: 5px;
+  width: 700px;
+  box-shadow: 0px 0px 1px 0px gray;
+  font-family: Arial;
+  float:left;
+}*/
+/*.tripName h3 {
+  margin: 1.2%;
+  margin-left: 1.5%;
+}*/
+/*.tripName p {
+  margin-top: 0;
+  margin-bottom: 1%;
+  font-size: 12px;
+}*/
+/*.tripName form {
+  margin-bottom: 0;
+ 	margin: 5px 5px 5px 5px;
+	padding: 10px;
+
+}*/
+/*middle is the section that contains the input fields for the Trip Name component
+ */
+/*.tripName .middle {
+  border-top: 1px dotted #dfe0e1;
+  border-bottom: 1px dotted #dfe0e1;
+  padding: 1.5%;
+  padding-bottom: 1.7%;
+}
+.tripName .middle input {
+  width: 98%;
+  height: 25px;
+  font-style: italic;
+  padding: 1%;
+  border-radius: 5px;
+  border-color: silver;
+  font-size: 17px;
+}*/
+
+/*::-webkit-input-placeholder {
+  color: silver;
+}
+:-moz-placeholder {
+  color: silver;
+}
+::-moz-placeholder {
+  color: silver;
+}
+:-ms-input-placeholder {
+  color: silver;
+}*/
+/*Defines the style for the button used to continue to the next section
+ */
+/*.tripName .button {
+  width: 16%;
+  height: 36px;
+  border-color: #CAD7DE;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  background: -webkit-linear-gradient(top, #99cae3 40%, #5bb3e1 80%);
+  background: -moz-linear-gradient(top, #81BEDD 40%, #3399CC 80%);
+}*/
+/*.tripName .button:hover {
+  cursor: pointer;
+}*/
+/*the bottom class represents the lower part of the Trip Name component, this section contains the continue button and other options
+ */
+/*.tripName .bottom {
+  padding: 1.5%;
+}
+
+.tripName .bottom p {
+  width: 83%;
+  text-align: right;
+  display: inline-block;
+  color: gray;
+  font-size: 10px
+}
+.tripName .bottom a {
+  color: #2d86b2;
+}*/
+
+/* --------------------TRIP NAME END-------------------------*/
+/* --------------------TRIP DETAILS START-------------------------*/
+/*Form Container*/
+form{	
+	width: 700px;
+	font-family: Arial;
+}
+
+/*Gives the style for the main section*/
+.dashboard {
+	border: 1px solid #BBBBBB;
+	border-radius: 5px;
+	box-shadow: 0px 0px 1px 0px gray;
+	float:left;
+}
+
+/*Creates a dotted line under the title*/
+.dashboard .title {
+	margin-top:20px;
+	margin-bottom:10px;
+	border-bottom: 1px dotted #EAEAEA ;
+}
+
+/*Gives the style for the title*/
+.dashboard .title h1 {
+	margin: 10px 20px 10px 20px;
+	font-size: 25px;
+}
+
+/*Gives the style for the inputs*/
+.items article input {
+	border: 0px;
+	margin-left: 15px;
+	width: 50%;
+}
+
+/*Gives the style for the inputs*/
+.items .solo input {
+	border: 0px;
+	margin-left: 0px;
+}
+
+/*Give the style for the border of each input*/
+.items article {
+	border: 1px solid #BBBBBB;
+	border-radius: 5px;
+	margin: 10px 20px 10px 20px;
+	padding: 10px;
+}
+
+/*Give the style for the border of each input*/
+.items .solo {
+	border: 1px solid #BBBBBB;
+	border-radius: 5px;
+	margin: 10px 20px 10px 20px;
+	padding: 10px;
+}
+
+.items p {
+	margin: 5px 20px 5px 10px;
+	padding: 5px 10px 5px 10px;
+}
+/*Creates a dotted line under the last input*/
+.dashboard .button {
+	margin-top:10px;
+	margin-bottom:10px;
+	border-top: 1px dotted #EAEAEA;
+}
+
+/*This gives the style for the button Start Planning */
+.dashboard .button .planning {
+	margin: 10px 15px 0px 20px;
+	padding: 6px 35px;
+	border-color: #CAD7DE;
+	border-radius: 4px;
+	color: white;
+	font-size: 16px;
+	background: -webkit-linear-gradient(top, #99cae3 40%, #5bb3e1 80%); /*Chrome*/
+	background: -moz-linear-gradient(top, #81BEDD 40%, #3399CC 80%); /*Firefox*/
+}
+
+/*This gives the style for the button Start Planning when mouse is over*/
+ .dashboard .button .planning:hover, .tripName .button:hover, .breadcrumb .btn:hover, .loginWrapper .loginBtn:hover  {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5bb3e1), color-stop(1, #99cae3) ); /*Chrome*/
+	background: -moz-linear-gradient( center top, #3399CC 5%, #81BEDD 100% ); /*Firefox*/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3399CC', endColorstr='#81BEDD');
+	background-color: #378de5;
+}
+
+/*This gives the style for the button Start Planning when is active*/
+.dashboard .button .planning:active, .tripName .button:active{
+	position: relative;
+	top: 1px;
+}
+
+/*This gives the style for the button Add more details */
+.dashboard .button .details {
+	margin: 10px 15px 0px 0px;
+	padding: 6px 35px;
+	border-color: #DFDFDF;
+	border-radius: 4px;
+	color: black;
+	font-size: 16px;
+	background: -webkit-linear-gradient(top, #FFFFFF 40%, #dfdfdf 80%);
+	background: -moz-linear-gradient(top, #FFFFFF 40%, #dfdfdf 80%);
+}
+
+/*This gives the style for the button Add more details when mouse is over*/
+.dashboard .button .details:hover {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #FFFFFF) );
+	background: -moz-linear-gradient( center top, #dfdfdf 5%, #FFFFFF 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#FFFFFF');
+	background-color: #dfdfdf;
+}
+
+/*This gives the style for the button Add more details when is active*/
+.dashboard .button .details:active {
+	position: relative;
+	top: 1px;
+}
+
+/*Gives the style for the "Other steps are optional"*/
+.dashboard .button span{
+	margin-top: 20px;
+	margin-right:20px;
+	color: #999999;
+	float: right;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+/*Gives the style for the "Click here"*/
+.dashboard .button span a{
+	font-size: 11px;
+	margin-left: 5px;	
+	font-weight: 100;
+	 color: #2d86b2;
+}
+
+/*Makes the content of the input-placeholder italic*/
+::-moz-placeholder {  /* Firefox 19+ */
+  font-style: italic;
+}
+
+:-ms-input-placeholder {  /*IE*/
+ font-style: italic;
+}
+
+::-webkit-input-placeholder { /*Chrome*/
+  font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-style: italic;
+}
+/* --------------------TRIP DETAILS END-------------------------*/

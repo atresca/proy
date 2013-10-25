@@ -1,0 +1,28 @@
+[{
+	"type": "sucess",
+	"value":{
+		"id": 1,
+		"users":[{
+			"username":"juan.perez",
+			"password":"juan" 
+			},
+			{
+			"username":"pedro.perez",
+			"password":"pedro"
+			},
+			{
+			"username":"pablo.perez",
+			"password":"pablo"
+			},
+			{
+			"username":"pepito.perez",
+			"password":"pepito"
+			},
+			{
+			"username":"lucas.perez",
+			"password":"lucas"
+			}
+		]
+	}
+	
+}]
